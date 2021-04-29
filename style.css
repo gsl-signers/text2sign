@@ -1,0 +1,71 @@
+body {
+    /* FOR DESIGN PURPOSE */
+    margin: 0;
+    background: #303541 !important;
+    /* overflow: hidden; */
+    /* ================== */
+  }
+  
+  #search_container {
+    position: relative; /* IMPORTANT */
+    width: 30%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  #search_ {
+    border: 0; /* HAS TO BE SIMILAR TO #autocomplete */
+    font-size: 14px; /* HAS TO BE SIMILAR TO #autocomplete */
+    padding: 10px; /* IMPORTANT */
+  
+    /* FOR DESIGN PURPOSE */
+    outline: 0;
+    color: #f8fafd;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Inconsolata", monospace;
+    /* ================== */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* overflow: scroll; */
+    /* width: 300px; */
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  #search_::placeholder {
+    color: #f8fafd; /* FOR DESIGN PURPOSE */
+  }
+  
+  #autocomplete {
+    position: absolute; /* IMPORTANT */
+    z-index: -1; /* IMPORTANT */
+    border: 0; /* HAS TO BE SIMILAR TO #search */
+    font-size: 14px; /* HAS TO BE SIMILAR TO #search */
+    left: 10px; /* ACCORDING TO THE LEFT-PADDING OF #search */
+    top: 10px; /* ACCORDING TO THE TOP-PADDING OF #search */
+  
+    /* FOR DESIGN PURPOSE */
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Inconsolata", monospace;
+    color: rgba(248, 250, 253, 0.4);
+    width: 100%;
+    /* ================== */
+  }
